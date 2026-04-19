@@ -1,0 +1,68 @@
+:root {
+    --primary: #4a90e2;
+    --success: #2ecc71;
+    --bg: #f4f7f6;
+    --text: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+header { text-align: center; margin-bottom: 20px; }
+.logo { width: 60px; height: auto; margin-bottom: 10px; }
+
+.progress-container {
+    background: #eee;
+    border-radius: 20px;
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background: var(--success);
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.input-section { display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; }
+input { padding: 12px; border: 1px solid #ddd; border-radius: 6px; }
+button { padding: 12px; background: var(--primary); color: white; border: none; border-radius: 6px; cursor: pointer; }
+
+.chapter-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.sub-chapter-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.delete-btn { color: #e74c3c; cursor: pointer; float: right; font-size: 12px; }

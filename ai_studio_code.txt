@@ -1,0 +1,3 @@
+title: My Study Tracker
+description: Tracking my progress chapter by chapter.
+theme: jekyll-theme-minimal

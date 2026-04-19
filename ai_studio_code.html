@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Progress Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Study Tracker</h1>
+        </header>
+
+        <section class="progress-section">
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar">0%</div>
+            </div>
+            <p id="stats">0 of 0 sub-chapters completed</p>
+        </section>
+
+        <section class="input-section">
+            <input type="text" id="chapter-input" placeholder="Chapter Name (e.g., Biology)">
+            <input type="text" id="subchapter-input" placeholder="Sub-chapters (comma separated)">
+            <button onclick="addChapter()">Add Chapter</button>
+        </section>
+
+        <section id="chapters-list" class="chapters-list">
+            <!-- Chapters will be injected here by app.js -->
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
